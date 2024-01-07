@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='DataViz' path='/t/anzijianz/workbooks' revision='1.0' site='anzijianz' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='videogamesales' inline='true' name='federated.1irrond0awgh1m15xic200tnjww6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='videogamesales' name='textscan.08ok1ci18d6wvp15zwb5j04dlsh2'>
+            <connection class='textscan' directory='D:/Big Data and Data VIz/Assignment' filename='videogamesales.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08ok1ci18d6wvp15zwb5j04dlsh2' name='videogamesales.csv' table='[videogamesales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Platform' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='string' name='Genre' ordinal='4' />
+            <column datatype='string' name='Publisher' ordinal='5' />
+            <column datatype='real' name='NA_Sales' ordinal='6' />
+            <column datatype='real' name='EU_Sales' ordinal='7' />
+            <column datatype='real' name='JP_Sales' ordinal='8' />
+            <column datatype='real' name='Other_Sales' ordinal='9' />
+            <column datatype='real' name='Global_Sales' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08ok1ci18d6wvp15zwb5j04dlsh2' name='videogamesales.csv' table='[videogamesales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Platform' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='string' name='Genre' ordinal='4' />
+            <column datatype='string' name='Publisher' ordinal='5' />
+            <column datatype='real' name='NA_Sales' ordinal='6' />
+            <column datatype='real' name='EU_Sales' ordinal='7' />
+            <column datatype='real' name='JP_Sales' ordinal='8' />
+            <column datatype='real' name='Other_Sales' ordinal='9' />
+            <column datatype='real' name='Global_Sales' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Platform</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Platform]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>Platform</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Publisher]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>Publisher</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NA_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NA_Sales]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>NA_Sales</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EU_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EU_Sales]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>EU_Sales</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JP_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[JP_Sales]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>JP_Sales</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other_Sales]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>Other_Sales</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Global_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Global_Sales]</local-name>
+            <parent-name>[videogamesales.csv]</parent-name>
+            <remote-alias>Global_Sales</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot; &quot;' />
+      </column>
+      <column caption='EU Sales' datatype='real' name='[EU_Sales]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+      <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+      <column caption='JP Sales' datatype='real' name='[JP_Sales]' role='measure' type='quantitative' />
+      <column caption='NA Sales' datatype='real' name='[NA_Sales]' role='measure' type='quantitative' />
+      <column caption='Other Sales' datatype='real' name='[Other_Sales]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Rank]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='videogamesales.csv' datatype='table' name='[__tableau_internal_object_id__].[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Platform]' derivation='None' name='[none:Platform:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[EU_Sales]' derivation='Sum' name='[sum:EU_Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[JP_Sales]' derivation='Sum' name='[sum:JP_Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NA_Sales]' derivation='Sum' name='[sum:NA_Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Other_Sales]' derivation='Sum' name='[sum:Other_Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Rank]' derivation='Sum' name='[sum:Rank:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Blank,Platform)' hidden='true' name='[Action (Blank,Platform)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+          <groupfilter function='level-members' level='[Platform]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Blank,Year)' hidden='true' name='[Action (Blank,Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+          <groupfilter function='level-members' level='[none:Year:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Genre:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Shooter&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Action&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Platform&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Simulation&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Puzzle&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Adventure&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Racing&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Role-Playing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fighting&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Strategy&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Misc&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Platform:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;GEN&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;X360&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;3DO&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PSV&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;TG16&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;NG&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;GG&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;XB&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GB&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Wii&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PS4&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3DS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SAT&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;PS2&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GBA&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;WiiU&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;PC&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;PCFX&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PS3&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PSP&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;N64&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;XOne&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GC&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;WS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2600&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SCD&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;PS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;NES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DC&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SNES&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:EU_Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1irrond0awgh1m15xic200tnjww6]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:Other_Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:NA_Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1irrond0awgh1m15xic200tnjww6].[__tableau_internal_object_id__].[cnt:videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:JP_Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:Rank:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='videogamesales.csv' id='videogamesales.csv_19D7410739804CAAB4CE405FD1B4F7DD'>
+            <properties context=''>
+              <relation connection='textscan.08ok1ci18d6wvp15zwb5j04dlsh2' name='videogamesales.csv' table='[videogamesales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Rank' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Platform' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='string' name='Genre' ordinal='4' />
+                  <column datatype='string' name='Publisher' ordinal='5' />
+                  <column datatype='real' name='NA_Sales' ordinal='6' />
+                  <column datatype='real' name='EU_Sales' ordinal='7' />
+                  <column datatype='real' name='JP_Sales' ordinal='8' />
+                  <column datatype='real' name='Other_Sales' ordinal='9' />
+                  <column datatype='real' name='Global_Sales' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_051477B437D144FF98663E37EA730771]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MyDashboard' type='sheet' worksheet='Year' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MyDashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_8F051B9ED57D4F0FAFE9AF690DB2F897]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MyDashboard' type='sheet' worksheet='Platform' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MyDashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Global Sales Over Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_8F051B9ED57D4F0FAFE9AF690DB2F897]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[Platform]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_051477B437D144FF98663E37EA730771]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]' included-values='all' />
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='18' />
+            <format attr='cell-h' value='6' />
+            <format attr='cell' value='6' />
+            <format attr='cell-q' value='30' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e6cfcf</color>
+                <color>#dbafaf</color>
+                <color>#d09191</color>
+                <color>#c57676</color>
+                <color>#ba5d5d</color>
+                <color>#af4545</color>
+                <color>#a43131</color>
+                <color>#991e1e</color>
+                <color>#8e0e0e</color>
+                <color>#830000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' />
+              <text column='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]</rows>
+        <cols>[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{ACADAE98-DFB1-45B5-96E4-929C8F78D3DC}' />
+    </worksheet>
+    <worksheet name='Global Sales by Platform'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Global Sales by Platform</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Platform]' derivation='None' name='[none:Platform:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_8F051B9ED57D4F0FAFE9AF690DB2F897]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[Platform]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_051477B437D144FF98663E37EA730771]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' />
+              <size column='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' />
+              <text column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1950DD7E-C2BB-4610-807E-723A472C3245}' />
+    </worksheet>
+    <worksheet name='Platform'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_1065945778162933760]' derivation='None' name='[none:Calculation_1065945778162933760:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Platform]' derivation='None' name='[none:Platform:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_051477B437D144FF98663E37EA730771]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' value='#606b76' />
+            <format attr='font-weight' field='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Calculation_1065945778162933760:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]</cols>
+      </table>
+      <simple-id uuid='{2F81A6C4-71B0-4B5C-830C-EC8B4027269B}' />
+    </worksheet>
+    <worksheet name='Regional Sales by Platform'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column caption='EU Sales' datatype='real' name='[EU_Sales]' role='measure' type='quantitative' />
+            <column caption='JP Sales' datatype='real' name='[JP_Sales]' role='measure' type='quantitative' />
+            <column caption='NA Sales' datatype='real' name='[NA_Sales]' role='measure' type='quantitative' />
+            <column caption='Other Sales' datatype='real' name='[Other_Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Platform]' derivation='None' name='[none:Platform:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[EU_Sales]' derivation='Sum' name='[sum:EU_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[JP_Sales]' derivation='Sum' name='[sum:JP_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NA_Sales]' derivation='Sum' name='[sum:NA_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Other_Sales]' derivation='Sum' name='[sum:Other_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:EU_Sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:JP_Sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:NA_Sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:Other_Sales:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_8F051B9ED57D4F0FAFE9AF690DB2F897]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[Platform]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_051477B437D144FF98663E37EA730771]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;PS2&quot;</bucket>
+              <bucket>&quot;X360&quot;</bucket>
+              <bucket>&quot;PS3&quot;</bucket>
+              <bucket>&quot;Wii&quot;</bucket>
+              <bucket>&quot;DS&quot;</bucket>
+              <bucket>&quot;PS&quot;</bucket>
+              <bucket>&quot;GBA&quot;</bucket>
+              <bucket>&quot;PSP&quot;</bucket>
+              <bucket>&quot;PS4&quot;</bucket>
+              <bucket>&quot;PC&quot;</bucket>
+              <bucket>&quot;XB&quot;</bucket>
+              <bucket>&quot;GB&quot;</bucket>
+              <bucket>&quot;NES&quot;</bucket>
+              <bucket>&quot;3DS&quot;</bucket>
+              <bucket>&quot;N64&quot;</bucket>
+              <bucket>&quot;SNES&quot;</bucket>
+              <bucket>&quot;GC&quot;</bucket>
+              <bucket>&quot;XOne&quot;</bucket>
+              <bucket>&quot;2600&quot;</bucket>
+              <bucket>&quot;WiiU&quot;</bucket>
+              <bucket>&quot;PSV&quot;</bucket>
+              <bucket>&quot;SAT&quot;</bucket>
+              <bucket>&quot;GEN&quot;</bucket>
+              <bucket>&quot;DC&quot;</bucket>
+              <bucket>&quot;SCD&quot;</bucket>
+              <bucket>&quot;NG&quot;</bucket>
+              <bucket>&quot;WS&quot;</bucket>
+              <bucket>&quot;TG16&quot;</bucket>
+              <bucket>&quot;3DO&quot;</bucket>
+              <bucket>&quot;GG&quot;</bucket>
+              <bucket>&quot;PCFX&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1irrond0awgh1m15xic200tnjww6].[Multiple Values]' field-type='quantitative' max='601.64675442227372' min='13.220295259294147' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1irrond0awgh1m15xic200tnjww6].[Multiple Values]</rows>
+        <cols>[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]</cols>
+      </table>
+      <simple-id uuid='{87542465-601A-4762-B6F7-E1DA7A979D24}' />
+    </worksheet>
+    <worksheet name='Regional sales by Genre'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='EU Sales' datatype='real' name='[EU_Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column caption='JP Sales' datatype='real' name='[JP_Sales]' role='measure' type='quantitative' />
+            <column caption='NA Sales' datatype='real' name='[NA_Sales]' role='measure' type='quantitative' />
+            <column caption='Other Sales' datatype='real' name='[Other_Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EU_Sales]' derivation='Sum' name='[sum:EU_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[JP_Sales]' derivation='Sum' name='[sum:JP_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NA_Sales]' derivation='Sum' name='[sum:NA_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Other_Sales]' derivation='Sum' name='[sum:Other_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:EU_Sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:JP_Sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:NA_Sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1irrond0awgh1m15xic200tnjww6].[sum:Other_Sales:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1irrond0awgh1m15xic200tnjww6].[Multiple Values]</rows>
+        <cols>[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]</cols>
+      </table>
+      <simple-id uuid='{72374F96-6E76-4B94-9FF3-22C002830395}' />
+    </worksheet>
+    <worksheet name='Sales Trend Global - Genre'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Yearly Global Sales Trend for All Genre</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_8F051B9ED57D4F0FAFE9AF690DB2F897]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[Platform]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_051477B437D144FF98663E37EA730771]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]' included-values='all' />
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]</rows>
+        <cols>[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{BDB02759-99D5-4895-9C0E-CB10DFE7E4FE}' />
+    </worksheet>
+    <worksheet name='Sales by Platform - Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Platform]' derivation='None' name='[none:Platform:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_8F051B9ED57D4F0FAFE9AF690DB2F897]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[Platform]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_051477B437D144FF98663E37EA730771]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d3d6e6</color>
+                <color>#b7bedb</color>
+                <color>#9da6d0</color>
+                <color>#8590c5</color>
+                <color>#6f7cbb</color>
+                <color>#5a69b0</color>
+                <color>#4757a5</color>
+                <color>#36479a</color>
+                <color>#26398f</color>
+                <color>#192c85</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' />
+              <color column='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' />
+              <lod column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]' />
+              <text column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' />
+              <text column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B1BDCD4C-085B-4EE7-8F0E-A695CD62803F}' />
+    </worksheet>
+    <worksheet name='Sales vs Genre'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sales vs Genre</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]</rows>
+        <cols>[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]</cols>
+      </table>
+      <simple-id uuid='{9D5C03D8-1817-4211-83DC-3C9F1B1C77E5}' />
+    </worksheet>
+    <worksheet name='Total Sales'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_8F051B9ED57D4F0FAFE9AF690DB2F897]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[Platform]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_051477B437D144FF98663E37EA730771]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Year)]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333' fontsize='16'>Total Global Sales(in Millions)</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='16'><![CDATA[<[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C2B9BD68-9E23-4F1F-A261-3DA6596A7F23}' />
+    </worksheet>
+    <worksheet name='Year'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='videogamesales' name='federated.1irrond0awgh1m15xic200tnjww6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1irrond0awgh1m15xic200tnjww6'>
+            <column caption='Blank' datatype='string' name='[Calculation_1065945778162933760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_1065945778162933760]' derivation='None' name='[none:Calculation_1065945778162933760:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_8F051B9ED57D4F0FAFE9AF690DB2F897]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1065945778162933760]' />
+              <groupfilter function='level-members' level='[Platform]' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]</column>
+            <column>[federated.1irrond0awgh1m15xic200tnjww6].[Action (Blank,Platform)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]' value='62' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' value='21' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]' value='#f17b79' />
+            <format attr='font-weight' field='[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1irrond0awgh1m15xic200tnjww6].[none:Calculation_1065945778162933760:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1irrond0awgh1m15xic200tnjww6].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{AB34690D-857D-440E-A886-79A86142EFC7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='MyDashboard'>
+      <style />
+      <size maxheight='1000' maxwidth='1600' minheight='1000' minwidth='1600' sizing-mode='fixed' />
+      <zones>
+        <zone h='11400' id='5' name='Total Sales' w='26938' x='40063' y='2200' />
+        <zone h='33200' id='6' name='Sales Trend Global - Genre' w='33313' x='-250' y='12100' />
+        <zone h='34400' id='7' name='Sales Trend Global - Genre' pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]' type-v2='color' w='7813' x='33188' y='14000' />
+        <zone h='44000' id='8' name='Global Sales by Platform' w='20500' x='40000' y='12600' />
+        <zone h='33600' id='9' name='Global Sales by Platform' pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' type-v2='color' w='6813' x='60500' y='13800' />
+        <zone h='42600' id='10' name='Sales by Platform - Year' w='28563' x='68438' y='14600' />
+        <zone h='6700' id='11' name='Sales by Platform - Year' pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' type-v2='color' w='9375' x='80563' y='7800' />
+        <zone h='31900' id='12' name='Global Sales Over Year' w='33313' x='375' y='53000' />
+        <zone h='28700' id='13' name='Regional Sales by Platform' w='33313' x='33938' y='52600' />
+        <zone h='10600' id='14' name='Regional Sales by Platform' pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]' type-v2='color' w='8750' x='66063' y='51100' />
+        <zone h='11700' id='15' name='Year' w='26188' x='73813' y='51200' />
+        <zone h='10100' id='16' name='Platform' w='33313' x='66875' y='65600' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='19' param='vert' type-v2='layout-flow' w='99000' x='500' y='800'>
+                <zone fixed-size='114' h='11400' id='5' is-fixed='true' name='Total Sales' w='26938' x='40063' y='2200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33200' id='6' is-fixed='true' name='Sales Trend Global - Genre' w='33313' x='-250' y='12100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='34400' id='7' name='Sales Trend Global - Genre' pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]' type-v2='color' w='7813' x='33188' y='14000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44000' id='8' is-fixed='true' name='Global Sales by Platform' w='20500' x='40000' y='12600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='33600' id='9' name='Global Sales by Platform' pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' type-v2='color' w='6813' x='60500' y='13800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42600' id='10' is-fixed='true' name='Sales by Platform - Year' w='28563' x='68438' y='14600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6700' id='11' name='Sales by Platform - Year' pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' type-v2='color' w='9375' x='80563' y='7800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='11700' id='15' is-fixed='true' name='Year' w='26188' x='73813' y='51200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28700' id='13' is-fixed='true' name='Regional Sales by Platform' w='33313' x='33938' y='52600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10600' id='14' name='Regional Sales by Platform' pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]' type-v2='color' w='8750' x='66063' y='51100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31900' id='12' is-fixed='true' name='Global Sales Over Year' w='33313' x='375' y='53000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='10100' id='16' is-fixed='true' name='Platform' w='33313' x='66875' y='65600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{29ADAEB4-F5F1-48E3-A26E-8E4D2DF94E57}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sales vs Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{180DA81A-102D-4337-B890-F3CB8BDD015C}' />
+    </window>
+    <window class='worksheet' name='Total Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{14D49150-307F-4E44-9B0A-328C16554B5D}' />
+    </window>
+    <window class='worksheet' name='Sales Trend Global - Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[none:Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{13C89301-A8AF-49B1-A5B6-28536081B431}' />
+    </window>
+    <window class='worksheet' name='Global Sales by Platform'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[none:Platform:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA05C853-3AFE-430D-97A7-BC3F419B689A}' />
+    </window>
+    <window class='worksheet' name='Regional Sales by Platform'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0925D2B8-15D2-4538-ACC5-2135E9F47CB9}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Regional sales by Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1irrond0awgh1m15xic200tnjww6].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4BFBFA1F-6F76-4348-AA06-BCEEE82BD0A7}' />
+    </window>
+    <window class='worksheet' name='Sales by Platform - Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3C463930-0C3E-476D-B34C-9A5E4C52167F}' />
+    </window>
+    <window class='worksheet' name='Global Sales Over Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1irrond0awgh1m15xic200tnjww6].[sum:Global_Sales:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9F34D508-1F16-4165-AD59-D0448DCF2B3C}' />
+    </window>
+    <window class='worksheet' name='Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9B966DD8-1494-4DCD-BCC5-496C4DF3C9A6}' />
+    </window>
+    <window class='worksheet' name='Platform'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8FD29C74-62A0-49C1-8CFC-24EFD479DEA7}' />
+    </window>
+    <window class='dashboard' name='MyDashboard'>
+      <viewpoints>
+        <viewpoint name='Global Sales Over Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Global Sales by Platform' />
+        <viewpoint name='Platform' />
+        <viewpoint name='Regional Sales by Platform'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sales Trend Global - Genre'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sales by Platform - Year' />
+        <viewpoint name='Total Sales' />
+        <viewpoint name='Year' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{463548EA-9595-49FB-8A8B-00605F675670}' />
+    </window>
+  </windows>
+</workbook>
